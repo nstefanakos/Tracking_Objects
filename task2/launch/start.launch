@@ -1,0 +1,8 @@
+<launch>
+
+	<rosparam file="$(find task2)/config/parameter.yaml" />
+
+	<node name="rosbag" pkg="rosbag" type="play" output="screen" args="/home/nstefanakos/bagfiles/1.bag" />
+	<node name="message" pkg="task2" type="message" />
+
+</launch>
